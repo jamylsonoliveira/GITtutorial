@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!--comentario bem aquiii-->
+<!--comentario bem aquiii -->
+
+<!--comentario novo-->
 
 <head>
   <meta charset="utf-8">
@@ -52,20 +54,20 @@
 
               <?php
 
-                            if (isset($_GET['resp'])) {
-                                $tipo_r = addslashes(($_GET['tipo_r']));
-                                $resp = addslashes(($_GET['resp']));
-                                if ($tipo_r == 'p') {
-                                    $balao_resp = 'success';
-                                } else {
-                                    $balao_resp = 'danger';
-                                }
-                                if ($resp != '') {
-                                    echo '<div class="alert alert-' . $balao_resp . ' mdi mdi-skull" role="alert">
+              if (isset($_GET['resp'])) {
+                $tipo_r = addslashes(($_GET['tipo_r']));
+                $resp = addslashes(($_GET['resp']));
+                if ($tipo_r == 'p') {
+                  $balao_resp = 'success';
+                } else {
+                  $balao_resp = 'danger';
+                }
+                if ($resp != '') {
+                  echo '<div class="alert alert-' . $balao_resp . ' mdi mdi-skull" role="alert">
                                  ' . $_GET['resp'] . '</div>';
-                                }
-                            }
-                            ?>
+                }
+              }
+              ?>
 
               <form class="text-left" method="post" action="logar.php">
                 <input type="hidden" name="type" value="<?php echo $_GET['t']; ?>">
