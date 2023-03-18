@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!--comentario bem aquiii -->
-
-<!--comentario novo-->
 
 <head>
   <meta charset="utf-8">
@@ -20,22 +17,22 @@
   <link rel="stylesheet" type="text/css" href="assets/css/forms/switches.css">
 
   <style>
-  a.forgot-pass-link {
-    color: #053d4e !important;
-  }
+    a.forgot-pass-link {
+      color: #053d4e !important;
+    }
 
-  .options {
-    margin-bottom: 3px;
-  }
+    .options {
+      margin-bottom: 3px;
+    }
 
-  #filtro_vidro {
-    background: rgba(1, 12, 51, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    width: 100%;
-    height: 100%;
-  }
+    #filtro_vidro {
+      background: rgba(1, 12, 51, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+      width: 100%;
+      height: 100%;
+    }
   </style>
 
 </head>
@@ -74,22 +71,18 @@
                 <div class="form">
                   <div id="username-field" class="field-wrapper input">
                     <label for="username">USUÁRIO</label>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                       <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <input id="usuario" name="usuario" type="email" class="form-control"
-                      placeholder="exemplo@email.com">
+                    <input id="usuario" name="usuario" type="email" class="form-control" placeholder="exemplo@email.com">
                   </div>
 
                   <div id="password-field" class="field-wrapper input mb-2">
                     <div class="d-flex justify-content-between">
                       <label for="password">SENHA</label>
                       <div class="options">
-                        <a target="_blank" href="recuperar_senha.php?t=<?php echo $_GET['t']; ?>"
-                          class="forgot-pass-link">Esqueceu sua senha?</a>
+                        <a target="_blank" href="recuperar_senha.php?t=<?php echo $_GET['t']; ?>" class="forgot-pass-link">Esqueceu sua senha?</a>
                         <!-- <a 
                                                 target="_blank" 
                                                 href="reativar_conta.php?t=<?php echo $_GET['t']; ?>" 
@@ -97,16 +90,12 @@
                                             >Reativar conta</a>-->
                       </div>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-lock">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
                       <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                     </svg>
                     <input id="password" name="senha" type="senha" class="form-control" placeholder="Senha">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      id="toggle-password" class="feather feather-eye">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="toggle-password" class="feather feather-eye">
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                       <circle cx="12" cy="12" r="3"></circle>
                     </svg>
